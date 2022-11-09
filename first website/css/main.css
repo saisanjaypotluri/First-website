@@ -1,0 +1,267 @@
+/* *{
+  border: 1px solid black;
+} */
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+header{
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+}
+header h1{
+  margin: 8px auto;
+}
+#toggle-menu{
+  text-align: right;
+  padding: 0.7em;
+}
+#toggle-menu span{
+  font-size: 20px;
+  cursor:pointer;
+}
+.themecolor{
+  background-color: mediumseagreen;
+  color: white;
+}
+nav{
+  display: none;
+  position:absolute;
+  width: 100%;
+  background-color: rgba(35,179,133,0.7);
+  color: white;
+}
+nav ul{
+  /* display: none; */
+  padding: 0;
+  margin: 0;
+}
+nav ul li a{
+  display: inline-block;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+
+}
+nav ul li a:hover{
+  background-color: orange;
+  box-shadow: 10px lightgrey;
+}
+#heroimage{
+  width: 100%;
+}
+section>h3{
+  padding: 10px;
+  text-align: center;
+}
+section article>h3{
+  color: orange;
+  text-align: center;
+  font-size: 1.25em;
+}
+article img{
+  width: 75%;
+}
+article{
+  text-align: center;
+}
+article>div{
+  display: inline-block;
+  box-sizing: border-box;
+  background-color:lightgrey;
+  width:70%;
+  padding:0 5px;
+  margin-bottom:10px;
+}
+.Reviews{
+  background-color: dodgerblue;
+  color:white;
+  text-align:center;
+  width:70%;
+  margin:0 auto;
+  padding:10px 5px;
+  margin-bottom:10px;
+  box-shadow:2px 5px 5px lightgrey;
+}
+footer{
+  margin-top:20px;
+  text-align: center;
+  color:orange;
+  background-color: lightslategrey;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+footer ul{
+  /* margin:0; */
+  padding-left: 0;
+  color:white;
+}
+#contactpage{min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+#contactpage h2{
+  color:orange;
+  margin-top:10px;
+}
+form{
+  box-sizing: border-box;
+  /* margin-top: 10px; */
+  min-width:250px;
+  max-width:280px;
+  margin: 10px auto;
+  padding: 20px;
+  color: white;
+  font-size:1.25em;
+  box-shadow:5px 5px 8px lightgrey;
+  background:linear-gradient(rgb(66, 134,244),rgb(77,221,195))
+}
+form input{
+  width:200px;
+  margin:10px 0 20px;
+}
+form textarea{
+  margin:10px 0 2px;
+  width:200px;
+}
+form input[type="submit"]{
+  font-size: 1.05em;
+}
+#contactpage footer{
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  height: 100px;
+}
+#wrap{
+  padding-bottom:140px;
+}
+.clearfix{
+  clear:both;
+}
+@media (min-width:600px){
+  body{
+    font-size:16px;
+  }
+  article img{
+    width:60%;
+  }
+}
+@media  (min-width:700px){
+  nav ul li{
+    display:inline-block;
+  }
+  nav {
+    text-align: center;
+  }
+  nav ul li a{
+    padding: 10px 25px;
+    font-size:1.25em;
+  }
+  #toggle-menu{
+    display: none;
+  }
+  nav{
+    display: block;
+    position:static;
+    width: 100%;
+    background-color: rgb(35,179,133);
+    color: white;
+  }
+  header h1{
+    float: left;
+    margin:14px 10px;
+  }
+  header>span {
+    float:right;
+    margin-right:10px;
+    margin-top:30px;
+  }
+  article img{
+    width:50%;
+  }
+}
+@media (min-width:1000px){
+  #heroimage{
+    margin-top:5px;
+    width:70%;
+    float:left;
+    height:70vh;
+    margin-bottom:5px;
+  }
+  aside{
+    margin-top:5px;
+    box-sizing:border-box;
+    border-left:5px solid orange;
+    width:30%;
+    float:right;
+    height:70vh;
+    margin-bottom:5px;
+    padding:10px 10px;
+  }
+  #rightimg{
+    float:right;
+    width:30%;
+    margin-right:10px;
+    margin-left:10px;
+    max-width: 340px;
+  }
+article div{
+  width:20%;
+}
+#leftimg{
+  float:left;
+  width:30%;
+  margin-right:10px;
+  margin-left:10px;
+  max-width: 340px;
+}
+.services article p{
+  padding:0 20px;
+  text-align:left;
+}
+article>h3{
+  text-decoration: underline;
+}
+.Reviews{
+  max-width:750px;
+}
+@media (min-width:1200px){
+nav ul li a{
+  font-size:1.4em;
+}
+header>span{
+  color:dodgerblue;
+}
+  #heroimage{
+    width:75%;
+    height:80vh;
+  }
+
+  aside{
+    width:25%;
+    height:80vh;
+    font-size:inherit;
+  }
+  article div{
+    width:20%;
+    /* position: relative; */
+  }
+  #rightimg{
+    margin-right:20px;
+  }
+  #leftimg{
+    margin-left:20px;
+  }
+  article{
+    margin-top:50px;
+
+  }
+}
+}
